@@ -178,7 +178,7 @@ else()
 
     # add openssl target
     ExternalProject_Add(openssl
-        URL https://mirror.viaduck.org/openssl/openssl-${OPENSSL_BUILD_VERSION}.tar.gz
+        URL ${CMAKE_CURRENT_SOURCE_DIR}/archives/openssl-${OPENSSL_BUILD_VERSION}.tar.gz
         ${OPENSSL_CHECK_HASH}
         UPDATE_COMMAND ""
 
